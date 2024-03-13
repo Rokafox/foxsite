@@ -1,0 +1,88 @@
+.header {
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark text color for contrast */
+  }
+  
+  .avatar-container {
+    display: flex;
+    align-items: center;
+  }
+  
+.writer-avatar {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle box shadow */
+    transition: transform 0.3s; /* Adds a smooth hover effect */
+}
+
+.writer-avatar:hover {
+    transform: scale(1.1); /* Increases size on hover */
+}
+
+  .writer-name {
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: bold;
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .navigation ul li {
+    margin-right: 20px; /* Adjust spacing as needed */
+  }
+
+  .navigation ul li a {
+    text-decoration: none;
+    color: #333; /* Dark grey color, feel free to adjust */
+    font-size: 18px; /* Adjust size as needed */
+  }
+
+  .language-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .language-select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    color: #333;
+  }
+
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .avatar-container {
+      margin-top: 5px;
+      margin-bottom: 20px; /* Add space between the avatar/name and the language selector */
+    }
+  
+    .language-container {
+      position: relative; /* Change from absolute to relative */
+      top: 0;
+      right: 0;
+      width: 100%; /* Full width to align with the header's width */
+      order: -1; /* Move the language selector to the top */
+    }
+  
+    .language-select {
+      width: 100%; /* Full width to align with the header's width */
+      margin-bottom: 5px; /* Optional: add if you want more space between the selector and the next element */
+    }
+  }

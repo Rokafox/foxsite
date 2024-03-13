@@ -1,0 +1,21 @@
+/* src/components/Footer/footer.css */
+
+.footer {
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark text color for contrast */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px; /* Ensure some space between the content and the footer */
+    font-size: 0.875rem;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  

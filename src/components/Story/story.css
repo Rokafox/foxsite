@@ -1,0 +1,47 @@
+/* story.css */
+.story-container {
+    max-width: 900px; /* Limit the width for readability */
+    margin: 40px auto; /* Center the story block and add some margin around */
+    padding: 20px; /* Padding inside the story block */
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  }
+  
+  .story-title {
+    font-family: 'Georgia', serif; /* Stylish font for titles */
+    color: #333; /* Dark color for contrast */
+    margin-bottom: 20px; /* Space between title and content */
+    text-align: center; /* Center the title */
+  }
+  
+  .story-content {
+    font-family: 'Arial', sans-serif; /* Readable font for content */
+    font-size: 16px; /* Optimal size for reading */
+    line-height: 1.6; /* Spacing between lines */
+    color: #666; /* Slightly lighter color for content */
+    text-align: justify; /* Justify text for a clean look */
+  }
+  
+  .story-image {
+    width: 100%; /* Default to full width on small screens */
+    height: auto;
+  }
+
+  .story-video {
+    width: 100%; /* Default to full width on small screens */
+    height: auto;
+  }
+
+  @media (min-width: 600px) {
+    .story-image {
+      width: 50%; /* Adjust size on larger screens */
+    }
+  }
+
+  .story-link {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+  }
