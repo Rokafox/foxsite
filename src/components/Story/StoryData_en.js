@@ -17,7 +17,6 @@ export const stories = {
       ]},
       { type: 'header', level: 2, content: 'Header 2' },
       { type: 'header', level: 3, content: 'Header 3' },
-      { type: 'text', content: 'This is a video:' },
     ],
     '2': [
         { type: 'text', content: 'This is the second story.' },
@@ -37,7 +36,6 @@ export const stories = {
         ]},
         { type: 'header', level: 2, content: 'Header 2' },
         { type: 'header', level: 3, content: 'Header 3' },
-        { type: 'text', content: 'This is a video:' },
     ],
     '3': [
         { type: 'text', content: 'This is the third story.' },
@@ -57,7 +55,6 @@ export const stories = {
         ]},
         { type: 'header', level: 2, content: 'Header 2' },
         { type: 'header', level: 3, content: 'Header 3' },
-        { type: 'text', content: 'This is a video:' },
     ],
     '4': [
         { type: 'text', content: 'This is the forth story.' },
@@ -77,7 +74,6 @@ export const stories = {
         ]},
         { type: 'header', level: 2, content: 'Header 2' },
         { type: 'header', level: 3, content: 'Header 3' },
-        { type: 'text', content: 'This is a video:' },
     ],
     '5': [
         { type: 'text', content: 'This is the fifth story.' },
@@ -97,7 +93,6 @@ export const stories = {
         ]},
         { type: 'header', level: 2, content: 'Header 2' },
         { type: 'header', level: 3, content: 'Header 3' },
-        { type: 'text', content: 'This is a video:' },
     ],
     '6': [
         { type: 'text', content: 'This is the sixth story.' },
@@ -117,7 +112,6 @@ export const stories = {
         ]},
         { type: 'header', level: 2, content: 'Header 2' },
         { type: 'header', level: 3, content: 'Header 3' },
-        { type: 'text', content: 'This is a video:' },
     ],
   };
     

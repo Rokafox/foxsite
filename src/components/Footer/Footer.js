@@ -1,16 +1,17 @@
-// src/components/Footer/Footer.js
-
 import React from 'react';
-import './footer.css'; // Make sure to create and import the corresponding CSS file for styling
+import './footer.css';
+import { translate } from '../../utilities/translate';
+import { useState } from 'react';
 
 const Footer = () => {
+  const [language] = useState(localStorage.getItem('language') || 'en');
   const year = new Date().getFullYear(); // Dynamically get the current year
 
   return (
     <footer className="footer">
       <div className="container">
         <p>@{year} Rokafox</p>
-        <p>Roka is a game character from Madohi Shiroki no Kamikakushi</p>
+        <p>{translate('footer_msg1', language)}</p>
         <a href="mailto:mail@rokafox.quest">mail@rokafox.quest</a>
         <div className="social-links">
           {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>

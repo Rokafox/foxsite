@@ -10,6 +10,8 @@ const Header = () => {
     const handleLanguageChange = (event) => {
       setLanguage(event.target.value);
       localStorage.setItem('language', event.target.value); // en, cn, jp
+      // Reload the page to reflect the changes
+      window.location.reload();
     };
 
     return (

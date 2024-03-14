@@ -54,6 +54,7 @@
   }
 
   .language-select {
+    min-width: 200px;
     padding: 5px 10px;
     font-size: 16px;
     border: 1px solid #ccc;

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import './stories.css'; // Make sure to create and import the CSS file for styling
+import './stories.css';
+import { translate } from '../../utilities/translate';
 
 // Mock data for stories, replace with real data fetching logic
-const mockStories = [
+const mockStories_en = [
     {
         id: 1,
         title: 'Story Title 1',
@@ -12,42 +13,52 @@ const mockStories = [
         link: '/stories/1', // Assuming you'll have a route for individual stories
     },
     // Add more stories here
-    {
-        id: 2,
-        title: 'Story Title 2',
-        category: 'Science Fiction',
-        date: '2021-10-02',
-        excerpt: 'This is a brief excerpt from Story 2...',
-        link: '/stories/2',
-    },
-    {
-        id: 3,
-        title: 'Story Title 3',
-        category: 'Mystery',
-        date: '2021-10-03',
-        excerpt: 'This is a brief excerpt from Story 3...',
-        link: '/stories/3',
-    },
+];
 
+const mockStories_cn = [
     {
-        id: 4,
-        title: 'Story Title 4',
-        category: 'Horror',
-        date: '2021-10-04',
-        excerpt: 'This is a brief excerpt from Story 4...',
-        link: '/stories/4',
+        id: 1,
+        title: '故事标题 1',
+        category: '幻想',
+        date: '2021-10-01',
+        excerpt: '这是故事1的简要摘录...',
+        link: '/stories/1',
     },
+    // Add more stories here
+];
 
+const mockStories_jp = [
+    {
+        id: 1,
+        title: 'ストーリータイトル 1',
+        category: 'ファンタジー',
+        date: '2021-10-01',
+        excerpt: 'これはストーリー1の簡単な抜粋です...',
+        link: '/stories/1',
+    },
+    // Add more stories here
+  
 ];
 
 const Stories = () => {
   // State to hold the search term
+  const [language] = useState(localStorage.getItem('language') || 'en');
   const [searchTerm, setSearchTerm] = useState('');
 
   // Function to handle change in search input
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value.toLowerCase());
   };
+
+  // Determine which mockApps to use based on the language
+  let mockStories;
+  if (language === 'cn') {
+    mockStories = mockStories_cn;
+  } else if (language === 'jp') {
+    mockStories = mockStories_jp;
+  } else {
+    mockStories = mockStories_en;
+  }
 
   // Filter stories based on the search term
   const filteredStories = mockStories.filter((story) => {
@@ -64,7 +75,7 @@ const Stories = () => {
       {/* Search input */}
       <input
         type="text"
-        placeholder="Smart Search..."
+        placeholder={translate('smartsearch', language)}
         value={searchTerm}
         onChange={handleSearchChange}
         className="search-input"
@@ -76,7 +87,7 @@ const Stories = () => {
             <p className="category-tag">{story.category}</p>
             <p className="date-of-publish">{story.date}</p>
             <p className="excerpt">{story.excerpt}</p>
-            <a href={story.link}>Read More</a>
+            <a href={story.link}>{translate('read_more', language)}</a>
           </div>
         ))}
       </div>

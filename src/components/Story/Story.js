@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { stories, stories_title } from './StoryData';
 import './story.css';
 
 const Story = () => {
+  const [storyData, setStoryData] = useState({ stories: {}, stories_title: {} });
+  const [language] = useState(localStorage.getItem('language') || 'en');
+
+  useEffect(() => {
+    import(`./StoryData_${language}.js`)
+      .then((module) => {
+        // Assuming the module exports stories and stories_title
+        setStoryData({ stories: module.stories, stories_title: module.stories_title });
+      })
+      .catch((error) => {
+        console.error(`Failed to load story data in ${language}:`, error);
+        // Optionally, set to a default language or show an error message
+      });
+  }, [language]);
+
   let { id } = useParams();
 
-  // Get the story array based on the id
-  const storyParts = stories[id];
-  const title = stories_title[id];
+  // Now we access storyParts and title from storyData
+  const storyParts = storyData.stories[id] || [{ type: 'text', content: 'This incident shall be reported.' },];
+  const title = storyData.stories_title[id] || 'Story Not Found';
 
   // Render the story parts
   const renderStoryPart = (part, index) => {
@@ -50,10 +64,11 @@ const Story = () => {
     }
   };
 
+  // Check if storyParts exist to render them
   return (
     <div className="story-container">
       <h2 className="story-title">{title}</h2>
-      {storyParts.map(renderStoryPart)}
+      {storyParts && storyParts.map(renderStoryPart)}
     </div>
   );
 };
