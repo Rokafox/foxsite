@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const Header = () => {
 
-    const [language, setLanguage] = useState(localStorage.getItem('language') || 'en');
+    const [language, setLanguage] = useState(localStorage.getItem('language') || 'jp');
 
     const handleLanguageChange = (event) => {
       setLanguage(event.target.value);
@@ -27,9 +27,9 @@ const Header = () => {
                         onChange={handleLanguageChange}
                         className="language-select"
                     >
+                        <option value="jp">日本語</option>
                         <option value="en">English</option>
                         <option value="cn">中文</option>
-                        <option value="jp">日本語</option>
                     </select>
                 </div>
                 <nav className="navigation">

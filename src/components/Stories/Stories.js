@@ -6,10 +6,10 @@ import { translate } from '../../utilities/translate';
 const mockStories_en = [
     {
         id: 1,
-        title: 'Story Title 1',
-        category: 'Fantasy',
-        date: '2021-10-01',
-        excerpt: 'This is a brief excerpt from Story 1...',
+        title: 'The Rules of Go',
+        category: 'Go',
+        date: '2024-03-15',
+        excerpt: 'A brief introduction to the rules of Go game.',
         link: '/stories/1', // Assuming you'll have a route for individual stories
     },
     // Add more stories here
@@ -18,10 +18,10 @@ const mockStories_en = [
 const mockStories_cn = [
     {
         id: 1,
-        title: '故事标题 1',
-        category: '幻想',
-        date: '2021-10-01',
-        excerpt: '这是故事1的简要摘录...',
+        title: '围棋规则',
+        category: '围棋',
+        date: '2024-03-15',
+        excerpt: '对围棋规则的简要介绍',
         link: '/stories/1',
     },
     // Add more stories here
@@ -30,10 +30,10 @@ const mockStories_cn = [
 const mockStories_jp = [
     {
         id: 1,
-        title: 'ストーリータイトル 1',
-        category: 'ファンタジー',
-        date: '2021-10-01',
-        excerpt: 'これはストーリー1の簡単な抜粋です...',
+        title: '囲碁のルール',
+        category: '囲碁',
+        date: '2024-03-15',
+        excerpt: '囲碁のルールを簡単に解説',
         link: '/stories/1',
     },
     // Add more stories here
