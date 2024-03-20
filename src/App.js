@@ -19,7 +19,7 @@ function App() {
           <Route path="/stories/:id" element={<Story />} />
         </Routes>
       </Router>
-      <Footer /> 
+      <Footer />
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './story.css';
+import CodeDisplay from '../Code/Code';
 
 const Story = () => {
   const [storyData, setStoryData] = useState({ stories: {}, stories_title: {} });
-  const [language] = useState(localStorage.getItem('language') || 'en');
+  const [language] = useState(localStorage.getItem('language') || 'jp');
 
   useEffect(() => {
     import(`./StoryData_${language}.js`)
@@ -20,8 +21,22 @@ const Story = () => {
 
   let { id } = useParams();
 
+  const getErrorMessage = (language) => {
+    switch (language) {
+      case 'jp':
+        return 'このストーリーの日本語翻訳は存在しません';
+      case 'cn':
+        return '本文的中文翻译不存在';
+      case 'en':
+        return 'Translation not available for this story';
+      default:
+        return 'Story not available. The incident shall be reported to the authorities.';
+    }
+  };
+  
   // Now we access storyParts and title from storyData
-  const storyParts = storyData.stories[id] || [{ type: 'text', content: 'This incident shall be reported.' },];
+  const storyParts = storyData.stories[id] || [{ type: 'text', content: getErrorMessage(language) }];
+
   const title = storyData.stories_title[id] || 'Story Not Found';
 
   // Render the story parts
@@ -59,6 +74,8 @@ const Story = () => {
             Your browser does not support the video tag.
           </video>
         );
+      case 'code':
+        return <CodeDisplay key={index} code={part.content} language={part.language} />;
       default:
         return null;
     }

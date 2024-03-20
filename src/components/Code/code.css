@@ -1,0 +1,5 @@
+.code-display {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: pre-wrap; /* Ensures code breaks appropriately */
+    word-wrap: break-word; /* Ensures words break to prevent horizontal overflow */
+  }

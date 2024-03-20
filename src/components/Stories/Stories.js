@@ -13,6 +13,14 @@ const mockStories_en = [
         link: '/stories/1', // Assuming you'll have a route for individual stories
     },
     // Add more stories here
+    {
+      id: 2,
+      title: 'Endgame Judgment',
+      category: 'Go',
+      date: '2024-03-20',
+      excerpt: 'Determining the outcome of a few special cases of endgames.',
+      link: '/stories/2',       
+    }
 ];
 
 const mockStories_cn = [
@@ -25,6 +33,14 @@ const mockStories_cn = [
         link: '/stories/1',
     },
     // Add more stories here
+    {
+      "id": 2,
+      "title": "胜负判定",
+      "category": "围棋",
+      "date": "2024-03-20",
+      "excerpt": "一些终局局面的胜负判定问题",
+      "link": "/stories/2",       
+    }    
 ];
 
 const mockStories_jp = [
@@ -37,12 +53,20 @@ const mockStories_jp = [
         link: '/stories/1',
     },
     // Add more stories here
+    {
+      id: 2,
+      title: '勝負の審判',
+      category: '囲碁',
+      date: '2024-03-20',
+      excerpt: 'いくつか判断しづらそうな終局の勝敗判定',
+      link: '/stories/2',       
+    }
   
 ];
 
 const Stories = () => {
   // State to hold the search term
-  const [language] = useState(localStorage.getItem('language') || 'en');
+  const [language] = useState(localStorage.getItem('language') || 'jp');
   const [searchTerm, setSearchTerm] = useState('');
 
   // Function to handle change in search input

@@ -41,7 +41,7 @@ const mockApps_jp = [
 
 const Software = () => {
   // State to hold the search term
-  const [language] = useState(localStorage.getItem('language') || 'en');
+  const [language] = useState(localStorage.getItem('language') || 'jp');
   const [searchTerm, setSearchTerm] = useState('');
 
   // Function to handle change in search input
