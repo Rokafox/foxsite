@@ -120,7 +120,7 @@ export const stories = {
       { type: 'text', content: 'An important Go app. Only works on windows.' },
       { type: 'image', src: '/story3/drago.png', alt: 'image description' },
       { type: 'link', href: 'http://www.godrago.net/', content: 'Website' },
-      { type: 'link', href: '/story3/PortableDrago0433.zip', content: 'Download' },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/dbgctgelb825tig/PortableDrago0433.zip', content: 'Download' },
       { type: 'text', content: `Drago can be used as frontend for GTP engines, but Sabaki overshadows it significantly. 
       However, its capabilities in managing Go game records, exporting a large number of records as PDFs for printing is nice to have, 
       The output design can also be customized. By "a large number," it means up to about 500. 
@@ -128,7 +128,7 @@ export const stories = {
       { type: 'header', level: 3, content: 'StoneBase' },
       { type: 'text', content: 'An very old Chinese Go app for Windows. Neither the software website nor a proper download link exists anymore.' },
       { type: 'image', src: '/story3/stonebase.png', alt: 'image description' },
-      { type: 'link', href: '/story3/setup.4.7.7.2272.exe', content: 'Download' },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/xibtstu50bmxz5q/setup.4.7.7.2272.exe', content: 'Download' },
       { type: 'text', content: `StoneBase can be used as a database management app for large amount of Go games.
       Despite being old, its appearance and functions are not bad at all. 
       StoneBase and Drago work mostly fine in Linux with the Bottle app, except for printing as pdf.` },

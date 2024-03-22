@@ -112,14 +112,14 @@ export const stories = {
       { type: 'text', content: '重要な囲碁アプリ。Windowsのみ対応。' },
       { type: 'image', src: '/story3/drago.png', alt: '画像の説明' },
       { type: 'link', href: 'http://www.godrago.net/', content: 'ウェブサイト' },
-      { type: 'link', href: '/story3/PortableDrago0433.zip', content: 'ダウンロード' },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/dbgctgelb825tig/PortableDrago0433.zip', content: 'ダウンロード' },
       { type: 'text', content: `Dragoは一応囲碁思考エンジンにも連携できますが、Sabakiが輝きしすぎているためあんまり使われていない。しかし、
       囲碁の棋譜管理、大量の棋譜をpdfして出力しプリントする機能は素晴らしいと思う。棋譜の出力デザインもカストマイズできる。
       ここで大量というのは、上限500くらい。これ以上になると謎のエラーが出る。` },
       { type: 'header', level: 3, content: 'StoneBase' },
       { type: 'text', content: '古い中華囲碁アプリ。ウェブサイトもまともなダウンロードリンクも存在しません。Windowsのみ対応。' },
       { type: 'image', src: '/story3/stonebase.png', alt: '画像の説明' },
-      { type: 'link', href: '/story3/setup.4.7.7.2272.exe', content: 'ダウンロード' },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/xibtstu50bmxz5q/setup.4.7.7.2272.exe', content: 'ダウンロード' },
       { type: 'text', content: `英語版以外のインストールは文字化けになる。棋譜のデータベース管理アプリとして利用できる。
       古いだが見た目も機能もぜんぜん悪くない。StoneBaseとDragoはLinuxの
       Bottleアプリでの動作はプリント機能以外は大体正常です。` },
