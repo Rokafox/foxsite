@@ -20,7 +20,7 @@ const mockStories_en = [
       date: '2024-03-20',
       excerpt: 'Determining the outcome of a few special cases of endgames.',
       link: '/stories/2',       
-    }
+    },
 ];
 
 const mockStories_cn = [
@@ -40,7 +40,7 @@ const mockStories_cn = [
       "date": "2024-03-20",
       "excerpt": "一些终局局面的胜负判定问题",
       "link": "/stories/2",       
-    }    
+    },    
 ];
 
 const mockStories_jp = [
@@ -60,8 +60,7 @@ const mockStories_jp = [
       date: '2024-03-20',
       excerpt: 'いくつか判断しづらそうな終局の勝敗判定',
       link: '/stories/2',       
-    }
-  
+    },
 ];
 
 const Stories = () => {

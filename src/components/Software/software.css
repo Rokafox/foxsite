@@ -22,11 +22,18 @@
     font-style: italic;
     color: #666;
   }
-  
+
   .intro {
     margin: 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+    height: 3em; /* 2 lines */
   }
-  
+
   .software-entry a {
     display: inline-block;
     background-color: antiquewhite;

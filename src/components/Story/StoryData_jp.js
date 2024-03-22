@@ -71,23 +71,58 @@ export const stories = {
                                 ` },
     ],
     '3': [
-      { type: 'text', content: 'これが最初のストーリーです。' },
-      { type: 'text', content: 'これは画像です：' },
-      { type: 'image', src: '/logo512.png', alt: '画像の説明' },
-      { type: 'text', content: '画像の後にさらにテキストがあります。' },
-      { type: 'link', href: 'https://www.example.com', content: 'example.comへのリンク' },
-      { type: 'ordered-list', items: [
-        { content: 'リスト内の最初のアイテム' },
-        { content: 'リスト内の2番目のアイテム' },
-        { content: 'リスト内の3番目のアイテム' }
-      ]},
-      { type: 'unordered-list', items: [
-        { content: 'リスト内の最初のアイテム' },
-        { content: 'リスト内の2番目のアイテム' },
-        { content: 'リスト内の3番目のアイテム' }
-      ]},
-      { type: 'header', level: 2, content: '見出し2' },
-      { type: 'header', level: 3, content: '見出し3' },
+      { type: 'header', level: 3, content: 'Sabaki' },
+      { type: 'text', content: '囲碁思考エンジンと連携できるGUIフロントエンド。優雅さと実用性を兼ね備えた完璧な囲碁アプリ。' },
+      { type: 'image', src: '/story3/sabaki.png', alt: '画像の説明' },
+      { type: 'link', href: 'https://github.com/SabakiHQ/Sabaki', content: 'Githubリンク' },
+      {
+        type: 'text', content: `Windowsユーザーは、右のReleasesをアクセスし、sabaki-最新バージョン-win-x64-setup.exeをダウンロードしてインストールすればいい。
+        File->Preferences->General->Languageで日本語を選択できる。
+        ` },
+      { type: 'header', level: 3, content: 'Katrain' },
+      { type: 'text', content: 'Katagoで囲碁対局を即座に分析するツール。' },
+      { type: 'image', src: '/story3/katrain.png', alt: '画像の説明' },
+      { type: 'link', href: 'https://github.com/sanderland/katrain', content: 'Githubリンク' },
+      {
+        type: 'text', content: `インストール、Katagoの設定などにはドキュメンテーションを読めばすぐにわかるはず。KataGoを自分でダウンロードする必要はなく、
+        アプリ内でもダウンロードできる。技術的な知識のないユーザーにやさしいUIが特徴。AIを
+        使って囲碁を勉強するには最適でこれ一択と言ってもいいくらい。
+        ` },
+      { type: 'header', level: 3, content: 'Katago' },
+      { type: 'text', content: '囲碁AI。' },
+      { type: 'link', href: 'https://github.com/lightvector/KataGo', content: 'Githubリンク' },
+      {
+        type: 'text', content: `ドキュメンテーションを読むのは非常に大事。結構いろいろ書いてます。Katagoの一番役立つところは勝率だけでなく、スコア(古典中国ルールで石の数の差)を推定
+        できること。また、珍しく、複数の囲碁ルールとボードサイズも対応している。実力はオーペンソースの囲碁AIの中で一番強いの可能性は高い。
+        ` },
+      {
+        type: 'text', content: `Katagoは囲碁思考エンジンとして使うにはコマンドラインでもいいんだが、GUI役のSabakiがおすすめです。Windowsユーザーは
+        まず、適切なバージョンのkatagoをダウンロードし、exeと同じフォルダにダウンロードしたモデルdefault_model.bin.gzを置いて、Sabakiを
+        起動し、File->Preferences->EnginesでKatagoを追加。
+        エンジン名は何でもいい、パスはkatago.exeの絶対パス。引数:
+        ` },
+      {
+        type: 'code',
+        language: 'bash',
+        content: `gtp -model default_model.bin.gz -config default_gtp.cfg`
+      },
+      { type: 'text', content: 'Sabakiでエンジンサイドバーを表示し、そこでKatagoを接続できれば成功です。' },
+      { type: 'text', content: 'この記事を書いた時点では噂のb28ニューラルネットはまだリリースされていない。どれだけ強くなるのは気ににゃる。' },
+      { type: 'header', level: 3, content: 'Drago' },
+      { type: 'text', content: '重要な囲碁アプリ。Windowsのみ対応。' },
+      { type: 'image', src: '/story3/drago.png', alt: '画像の説明' },
+      { type: 'link', href: 'http://www.godrago.net/', content: 'ウェブサイト' },
+      { type: 'link', href: '/story3/PortableDrago0433.zip', content: 'ダウンロード' },
+      { type: 'text', content: `Dragoは一応囲碁思考エンジンにも連携できますが、Sabakiが輝きしすぎているためあんまり使われていない。しかし、
+      囲碁の棋譜管理、大量の棋譜をpdfして出力しプリントする機能は素晴らしいと思う。棋譜の出力デザインもカストマイズできる。
+      ここで大量というのは、上限500くらい。これ以上になると謎のエラーが出る。` },
+      { type: 'header', level: 3, content: 'StoneBase' },
+      { type: 'text', content: '古い中華囲碁アプリ。ウェブサイトもまともなダウンロードリンクも存在しません。Windowsのみ対応。' },
+      { type: 'image', src: '/story3/stonebase.png', alt: '画像の説明' },
+      { type: 'link', href: '/story3/setup.4.7.7.2272.exe', content: 'ダウンロード' },
+      { type: 'text', content: `英語版以外のインストールは文字化けになる。棋譜のデータベース管理アプリとして利用できる。
+      古いだが見た目も機能もぜんぜん悪くない。StoneBaseとDragoはLinuxの
+      Bottleアプリでの動作はプリント機能以外は大体正常です。` },
     ],
     '4': [
       { type: 'text', content: 'これが最初のストーリーです。' },
@@ -160,7 +195,7 @@ export const stories = {
  export const stories_title = {
       '1': '囲碁のルール',
       '2': '勝負の審判',
-      '3': 'ストーリータイトル3',
+      '3': 'PC用囲碁アプリ',
       '4': 'ストーリータイトル4',
       '5': 'ストーリータイトル5',
       '6': 'ストーリータイトル6',

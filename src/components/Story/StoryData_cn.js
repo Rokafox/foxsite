@@ -71,27 +71,54 @@ export const stories = {
                               ` },
   ],
   '3': [
-    { type: 'text', content: '这是第一个故事。' },
-    { type: 'text', content: '这是一张图片：' },
-    { type: 'image', src: '/logo512.png', alt: '图片描述' },
-    { type: 'text', content: '图片后的更多文本。' },
-    { type: 'link', href: 'https://www.example.com', content: '链接到example.com' },
+    { type: 'header', level: 3, content: 'Sabaki' },
+    { type: 'text', content: '围棋GTP引擎的GUI前端，兼具优雅与实用性的完美围棋应用。' },
+    { type: 'image', src: '/story3/sabaki.png', alt: '画像の説明' },
+    { type: 'link', href: 'https://github.com/SabakiHQ/Sabaki', content: 'Github' },
     {
-      type: 'ordered-list', items: [
-        { content: '列表中的第一项' },
-        { content: '列表中的第二项' },
-        { content: '列表中的第三项' }
-      ]
-    },
+      type: 'text', content: `Windows用户可以访问右侧的Releases，下载并安装sabaki-最新版本-win-x64-setup.exe。
+      ` },
+    { type: 'header', level: 3, content: 'Katrain' },
+    { type: 'text', content: '使用Katago进行局势判断与最佳手分析。' },
+    { type: 'image', src: '/story3/katrain.png', alt: '画像の説明' },
+    { type: 'link', href: 'https://github.com/sanderland/katrain', content: 'Github' },
     {
-      type: 'unordered-list', items: [
-        { content: '列表中的第一项' },
-        { content: '列表中的第二项' },
-        { content: '列表中的第三项' }
-      ]
+      type: 'text', content: `阅读Github文档可快速了解如何安装和配置Katago。Katrain有带下载Katago的功能，无需自己单独下载Katago
+      所以比较特别适合没有技术背景的用户。这软件大概是利用AI学棋的最佳选择。
+      ` },
+    { type: 'header', level: 3, content: 'Katago' },
+    { type: 'text', content: '囲碁AI。' },
+    { type: 'link', href: 'https://github.com/lightvector/KataGo', content: 'Github' },
+    {
+      type: 'text', content: `阅读文档至关重要。Katago最有用的地方不仅在于胜率表示，还在于它能估算子差。
+      有趣的是，还支持多种围棋规则和棋盘大小。很可能是开源软件中最强大的围棋AI。
+      ` },
+    {
+      type: 'text', content: `Katago可用cmd启动GTP引擎，但图形用户界面的话推荐Sabaki。首先，
+      下载相应版本的katago，将下载的模型default_model.bin.gz放在与exe相同的文件夹中，然后以如下方式运行Sabaki启动
+      并在"文件"->"首选项"->"引擎"中添加 katago。引擎
+      名称可以是任何名称，路径是katago.exe的绝对路径。参数如下：.
+      ` },
+    {
+      type: 'code',
+      language: 'bash',
+      content: `gtp -model default_model.bin.gz -config default_gtp.cfg`
     },
-    { type: 'header', level: 2, content: '标题 2' },
-    { type: 'header', level: 3, content: '标题 3' }
+    { type: 'text', content: '在Sabaki中显示引擎侧边栏，并成功连接Katago即表示成功。' },
+    { type: 'text', content: '撰写本文时，我比较期待的，传闻中的，更为强大的b28神经网络尚未发布。' },
+    { type: 'header', level: 3, content: 'Drago' },
+    { type: 'text', content: '重要的围棋应用，仅支持Windows。' },
+    { type: 'image', src: '/story3/drago.png', alt: '画像の説明' },
+    { type: 'link', href: 'http://www.godrago.net/', content: '主页' },
+    { type: 'link', href: '/story3/PortableDrago0433.zip', content: '下载' },
+    { type: 'text', content: `虽然Drago也支持GTP引擎，但显然Sabaki更为出色。
+    不过棋谱管理功能和将大量棋谱导出为PDF以便打印的功能很方便。打印之时可以选择各种排版。所谓的大量，经测试，上限大约为500。超过这个数量可能会报错。` },
+    { type: 'header', level: 3, content: 'StoneBase' },
+    { type: 'text', content: '以前在中国的各类论坛上知名围棋应用，现在连正式的网站或下载链接都以不复存在，仅支持Windows。' },
+    { type: 'image', src: '/story3/stonebase.png', alt: '画像の説明' },
+    { type: 'link', href: '/story3/setup.4.7.7.2272.exe', content: '下载' },
+    { type: 'text', content: `非英语版本安装时会出现乱码的情况。可用作棋谱的数据库管理应用
+    程序。StoneBase和Drago可在Linux通过Bottle应用程序运行。除了打印功能外大致正常。` },
   ],
   '4': [
     { type: 'text', content: '这是第一个故事。' },
@@ -176,7 +203,7 @@ export const stories = {
 export const stories_title = {
   '1': '围棋规则',
   '2': '胜负判定',
-  '3': '故事标题 3',
+  '3': 'PC围棋软件',
   '4': '故事标题 4',
   '5': '故事标题 5',
   '6': '故事标题 6',

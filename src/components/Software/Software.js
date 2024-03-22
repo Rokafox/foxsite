@@ -6,35 +6,35 @@ import { translate } from '../../utilities/translate';
 const mockApps_en = [
     {
         id: 1,
-        title: 'Test App 1',
-        category: 'Utility',
-        date: '2021-10-01',
-        intro: 'This is a brief introduction to Test App 1...',
-        link: '/stories/5', 
+        title: 'Go game PC software',
+        category: 'Go',
+        date: '2023-03-22',
+        intro: 'An introduction to the essential PC software for playing Go',
+        link: '/stories/3', 
     },
     // Add more here
 ];
 
 const mockApps_cn = [
     {
-        id: 1,
-        title: '测试应用 1',
-        category: '实用工具',
-        date: '2021-10-01',
-        intro: '这是对测试应用1的简要介绍...',
-        link: '/stories/5',
+      id: 1,
+      title: 'PC围棋软件',
+      category: '围棋',
+      date: '2023-03-22',
+      intro: '介绍一些好用的PC围棋软件',
+      link: '/stories/3',
     },
-    // Add more here
+  // Add more here
 ];
 
 const mockApps_jp = [
     {
         id: 1,
-        title: 'テストアプリ 1',
-        category: 'ユーティリティ',
-        date: '2021-10-01',
-        intro: 'これはテストアプリ1の簡単な紹介です...',
-        link: '/stories/5',
+        title: 'PC用囲碁アプリ',
+        category: '囲碁',
+        date: '2023-03-22',
+        intro: '囲碁を楽しめる不可欠なPCアプリ',
+        link: '/stories/3',
     },
     // Add more here
 ];
