@@ -80,14 +80,14 @@ export const stories = {
     '3': [
       { type: 'header', level: 3, content: 'Sabaki' },
       { type: 'text', content: 'A GUI frontend. A perfect modern Go app that combines elegance with functionality.' },
-      { type: 'image', src: '/story3/sabaki.png', alt: 'image description' },
+      { type: 'image', src: '/story3/sabaki.png', alt: 'image description', width: '100%' },
       { type: 'link', href: 'https://github.com/SabakiHQ/Sabaki', content: 'Github' },
       {
         type: 'text', content: `Windows users should access the Releases on the right, download and install sabaki-latest-version-win-x64-setup.exe.
         ` },
       { type: 'header', level: 3, content: 'Katrain' },
       { type: 'text', content: 'A tool that instantly analyzes Go games with Katago.' },
-      { type: 'image', src: '/story3/katrain.png', alt: 'image description' },
+      { type: 'image', src: '/story3/katrain.png', alt: 'image description', width: '100%' },
       { type: 'link', href: 'https://github.com/sanderland/katrain', content: 'Github' },
       {
         type: 'text', content: `Installation and setting up Katago should be straightforward with the documentation.
@@ -118,7 +118,7 @@ export const stories = {
       { type: 'text', content: 'At the time of writing this article, the rumored b28 neural network has not yet been released. I am a little curious about how strong it would be.' },
       { type: 'header', level: 3, content: 'Drago' },
       { type: 'text', content: 'An important Go app. Only works on windows.' },
-      { type: 'image', src: '/story3/drago.png', alt: 'image description' },
+      { type: 'image', src: '/story3/drago.png', alt: 'image description', width: '100%' },
       { type: 'link', href: 'http://www.godrago.net/', content: 'Website' },
       { type: 'link', href: 'https://www.mediafire.com/file_premium/dbgctgelb825tig/PortableDrago0433.zip', content: 'Download' },
       { type: 'text', content: `Drago can be used as frontend for GTP engines, but Sabaki overshadows it significantly. 
@@ -127,7 +127,7 @@ export const stories = {
       Beyond that, mysterious errors would likely occur.` },
       { type: 'header', level: 3, content: 'StoneBase' },
       { type: 'text', content: 'An very old Chinese Go app for Windows. Neither the software website nor a proper download link exists anymore.' },
-      { type: 'image', src: '/story3/stonebase.png', alt: 'image description' },
+      { type: 'image', src: '/story3/stonebase.png', alt: 'image description', width: '100%' },
       { type: 'link', href: 'https://www.mediafire.com/file_premium/xibtstu50bmxz5q/setup.4.7.7.2272.exe', content: 'Download' },
       { type: 'text', content: `StoneBase can be used as a database management app for large amount of Go games.
       Despite being old, its appearance and functions are not bad at all. 
@@ -174,7 +174,7 @@ export const stories = {
     '6': [
         { type: 'text', content: 'This is the sixth story.' },
         { type: 'text', content: 'This is a image:'},
-        { type: 'image', src: '/logo512.png', alt: 'Image description' },
+        { type: 'image', src: '/logo512.png', alt: 'Image description', width: '100%' },
         { type: 'text', content: 'More text after the image.' },
         { type: 'link', href: 'https://www.example.com', content: 'Link to example.com'},
         { type: 'ordered-list', items: [
@@ -197,6 +197,16 @@ export const stories = {
             System.out.println("Hello, World!");
           }
         }`
+        },
+        {
+          type: 'progress-bar',
+          completed: 52.3,
+          bgColor: '#000000',
+          height: '30px',
+          labelColor: '#ffffff',
+          labelSize: '20px',
+          maxCompleted: 100,
+          customLabel: '52.3%'
         },
     ],
   };

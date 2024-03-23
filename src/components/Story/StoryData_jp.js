@@ -73,7 +73,7 @@ export const stories = {
     '3': [
       { type: 'header', level: 3, content: 'Sabaki' },
       { type: 'text', content: '囲碁思考エンジンと連携できるGUIフロントエンド。優雅さと実用性を兼ね備えた完璧な囲碁アプリ。' },
-      { type: 'image', src: '/story3/sabaki.png', alt: '画像の説明' },
+      { type: 'image', src: '/story3/sabaki.png', alt: '画像の説明', width: '100%' },
       { type: 'link', href: 'https://github.com/SabakiHQ/Sabaki', content: 'Githubリンク' },
       {
         type: 'text', content: `Windowsユーザーは、右のReleasesをアクセスし、sabaki-最新バージョン-win-x64-setup.exeをダウンロードしてインストールすればいい。
@@ -81,7 +81,7 @@ export const stories = {
         ` },
       { type: 'header', level: 3, content: 'Katrain' },
       { type: 'text', content: 'Katagoで囲碁対局を即座に分析するツール。' },
-      { type: 'image', src: '/story3/katrain.png', alt: '画像の説明' },
+      { type: 'image', src: '/story3/katrain.png', alt: '画像の説明', width: '100%' },
       { type: 'link', href: 'https://github.com/sanderland/katrain', content: 'Githubリンク' },
       {
         type: 'text', content: `インストール、Katagoの設定などにはドキュメンテーションを読めばすぐにわかるはず。KataGoを自分でダウンロードする必要はなく、
@@ -110,7 +110,7 @@ export const stories = {
       { type: 'text', content: 'この記事を書いた時点では噂のb28ニューラルネットはまだリリースされていない。どれだけ強くなるのは気ににゃる。' },
       { type: 'header', level: 3, content: 'Drago' },
       { type: 'text', content: '重要な囲碁アプリ。Windowsのみ対応。' },
-      { type: 'image', src: '/story3/drago.png', alt: '画像の説明' },
+      { type: 'image', src: '/story3/drago.png', alt: '画像の説明', width: '100%' },
       { type: 'link', href: 'http://www.godrago.net/', content: 'ウェブサイト' },
       { type: 'link', href: 'https://www.mediafire.com/file_premium/dbgctgelb825tig/PortableDrago0433.zip', content: 'ダウンロード' },
       { type: 'text', content: `Dragoは一応囲碁思考エンジンにも連携できますが、Sabakiが輝きしすぎているためあんまり使われていない。しかし、
@@ -118,7 +118,7 @@ export const stories = {
       ここで大量というのは、上限500くらい。これ以上になると謎のエラーが出る。` },
       { type: 'header', level: 3, content: 'StoneBase' },
       { type: 'text', content: '古い中華囲碁アプリ。ウェブサイトもまともなダウンロードリンクも存在しません。Windowsのみ対応。' },
-      { type: 'image', src: '/story3/stonebase.png', alt: '画像の説明' },
+      { type: 'image', src: '/story3/stonebase.png', alt: '画像の説明', width: '100%' },
       { type: 'link', href: 'https://www.mediafire.com/file_premium/xibtstu50bmxz5q/setup.4.7.7.2272.exe', content: 'ダウンロード' },
       { type: 'text', content: `英語版以外のインストールは文字化けになる。棋譜のデータベース管理アプリとして利用できる。
       古いだが見た目も機能もぜんぜん悪くない。StoneBaseとDragoはLinuxの
@@ -165,7 +165,7 @@ export const stories = {
     '6': [
       { type: 'text', content: 'これが最初のストーリーです。' },
       { type: 'text', content: 'これは画像です：' },
-      { type: 'image', src: '/logo512.png', alt: '画像の説明' },
+      { type: 'image', src: '/logo512.png', alt: '画像の説明', width: '100%' },
       { type: 'text', content: '画像の後にさらにテキストがあります。' },
       { type: 'link', href: 'https://www.example.com', content: 'example.comへのリンク' },
       { type: 'ordered-list', items: [
@@ -188,6 +188,16 @@ export const stories = {
           System.out.println("Hello, World!");
         }
       }`
+      },
+      {
+        type: 'progress-bar',
+        completed: 52.3,
+        bgColor: '#000000',
+        height: '30px',
+        labelColor: '#ffffff',
+        labelSize: '20px',
+        maxCompleted: 100,
+        customLabel: '52.3%'
       },
     ],
   };

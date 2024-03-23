@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './story.css';
 import CodeDisplay from '../Code/Code';
+import ProgressBar from "@ramonak/react-progress-bar";
 
 const Story = () => {
   const [storyData, setStoryData] = useState({ stories: {}, stories_title: {} });
@@ -45,7 +46,7 @@ const Story = () => {
       case 'text':
         return <p key={index} className="story-content">{part.content}</p>;
       case 'image':
-        return <img key={index} src={part.src} alt={part.alt} className="story-image" />;
+        return <img key={index} src={part.src} alt={part.alt} className="story-image" style={{ width: part.width }} />;
       case 'link':
         return <a key={index} href={part.href} className="story-link">{part.content}</a>;
       case 'header':
@@ -76,6 +77,10 @@ const Story = () => {
         );
       case 'code':
         return <CodeDisplay key={index} code={part.content} language={part.language} />;
+      case 'progress-bar':
+        return <ProgressBar key={index} completed={part.completed} 
+        bgColor={part.bgColor} height={part.height} labelColor={part.labelColor} 
+        labelSize={part.labelSize} maxCompleted={part.maxCompleted} customLabel={part.customLabel} />;
       default:
         return null;
     }
