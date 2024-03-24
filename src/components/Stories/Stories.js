@@ -21,6 +21,14 @@ const mockStories_en = [
       excerpt: 'Determining the outcome of a few special cases of endgames.',
       link: '/stories/2',       
     },
+    {
+      "id": 3,
+      "title": "1600 Go Game Openings",
+      "category": "Go",
+      "date": "2024-03-24",
+      "excerpt": "1600 self-played game openings under ancient Chinese Go rules by Katago",
+      "link": "/stories/4",       
+    },    
 ];
 
 const mockStories_cn = [
@@ -40,7 +48,15 @@ const mockStories_cn = [
       "date": "2024-03-20",
       "excerpt": "一些终局局面的胜负判定问题",
       "link": "/stories/2",       
-    },    
+    },
+    {
+      "id": 3,
+      "title": "围棋布局1600局",
+      "category": "围棋",
+      "date": "2024-03-24",
+      "excerpt": "中国古棋规则下Katago的自战1600局布局",
+      "link": "/stories/4",       
+    },     
 ];
 
 const mockStories_jp = [
@@ -60,6 +76,14 @@ const mockStories_jp = [
       date: '2024-03-20',
       excerpt: 'いくつか判断しづらそうな終局の勝敗判定',
       link: '/stories/2',       
+    },
+    {
+      id: 3,
+      title: '囲碁布石1600局',
+      category: '囲碁',
+      date: '2024-03-24',
+      excerpt: '古典中国ルールでKatagoの1600局自戦布石',
+      link: '/stories/4',       
     },
 ];
 

@@ -121,27 +121,14 @@ export const stories = {
     程序。StoneBase和Drago可在Linux通过Bottle应用程序运行。除了打印功能外大致正常。` },
   ],
   '4': [
-    { type: 'text', content: '这是第一个故事。' },
-    { type: 'text', content: '这是一张图片：' },
-    { type: 'image', src: '/logo512.png', alt: '图片描述' },
-    { type: 'text', content: '图片后的更多文本。' },
-    { type: 'link', href: 'https://www.example.com', content: '链接到example.com' },
-    {
-      type: 'ordered-list', items: [
-        { content: '列表中的第一项' },
-        { content: '列表中的第二项' },
-        { content: '列表中的第三项' }
-      ]
-    },
-    {
-      type: 'unordered-list', items: [
-        { content: '列表中的第一项' },
-        { content: '列表中的第二项' },
-        { content: '列表中的第三项' }
-      ]
-    },
-    { type: 'header', level: 2, content: '标题 2' },
-    { type: 'header', level: 3, content: '标题 3' }
+    { type: 'text', content: 'Katago的古棋规则自战1600局。仅前30手，每一手限定计算800visits。开局的选点增加了一些随意性，每一手可能不是当前局面的最善手。' },
+    { type: 'text', content: 'pdf文档由Drago作成，因导入棋谱库时踢除了重复的70局，剩1530局而分为3份pdf。' },
+    { type: 'link', href: 'https://www.mediafire.com/file_premium/i4hvzk2wppu0rga/openings_0.pdf', content: 'pdf0' },
+    { type: 'link', href: 'https://www.mediafire.com/file_premium/owx22bbx3h1akfq/openings_1.pdf', content: 'pdf1' },
+    { type: 'link', href: 'https://www.mediafire.com/file_premium/8ws91uum4s2opx2/openings_2.pdf', content: 'pdf2' },
+    { type: 'link', href: 'https://www.mediafire.com/file_premium/yp7m8uycfm71zyg/openings_sgf.zip', content: 'sgf文件' },
+    { type: 'text', content: '例局：' },
+    { type: 'image', src: '/story4/opening_example.png', alt: '画像の説明', width: '100%' },
   ],
   '5': [
     { type: 'text', content: '这是第一个故事。' },
@@ -214,7 +201,7 @@ export const stories_title = {
   '1': '围棋规则',
   '2': '胜负判定',
   '3': 'PC围棋软件',
-  '4': '故事标题 4',
+  '4': '围棋布局1600局',
   '5': '故事标题 5',
   '6': '故事标题 6',
 };

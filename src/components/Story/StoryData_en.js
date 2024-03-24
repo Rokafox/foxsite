@@ -134,23 +134,18 @@ export const stories = {
       StoneBase and Drago work mostly fine in Linux with the Bottle app, except for printing as pdf.` },
     ],
     '4': [
-        { type: 'text', content: 'This is the forth story.' },
-        { type: 'text', content: 'This is a image:'},
-        { type: 'image', src: '/logo512.png', alt: 'Image description' },
-        { type: 'text', content: 'More text after the image.' },
-        { type: 'link', href: 'https://www.example.com', content: 'Link to example.com'},
-        { type: 'ordered-list', items: [
-          { content: 'First item in the list' },
-          { content: 'Second item in the list' },
-          { content: 'Third item in the list' }
-        ]},
-        { type: 'unordered-list', items: [
-          { content: 'First item in the list' },
-          { content: 'Second item in the list' },
-          { content: 'Third item in the list' }
-        ]},
-        { type: 'header', level: 2, content: 'Header 2' },
-        { type: 'header', level: 3, content: 'Header 3' },
+      { type: 'text', content: `Katago's 1600 self-play games under ancient Chinese stone scoring rules to demonstrate the Go opening moves.
+      Only the first 30 moves is played, each move is limited to 800 visits. The opening moves have increased randomness, 
+      and each move might not be the best move.` },
+      { type: 'text', content: `The PDF document was created by Drago, 
+      70 duplicate games are excluded when importing into the database, 
+      pdf file is divided into 3 parts with a total of 1530 games.` },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/i4hvzk2wppu0rga/openings_0.pdf', content: 'pdf0' },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/owx22bbx3h1akfq/openings_1.pdf', content: 'pdf1' },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/8ws91uum4s2opx2/openings_2.pdf', content: 'pdf2' },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/yp7m8uycfm71zyg/openings_sgf.zip', content: 'sgf files' },
+      { type: 'text', content: 'Example Opening:' },
+      { type: 'image', src: '/story4/opening_example.png', alt: '画像の説明', width: '100%' },
     ],
     '5': [
         { type: 'text', content: 'This is the fifth story.' },
@@ -215,7 +210,7 @@ export const stories = {
       '1': 'The Rules of Go',
       '2': 'Endgame Judgment',
       '3': 'Go game PC software',
-      '4': 'Story Title 4',
+      '4': '1600 Go Game Openings',
       '5': 'Story Title 5',
       '6': 'Story Title 6',
     };

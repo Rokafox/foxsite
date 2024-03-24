@@ -125,23 +125,15 @@ export const stories = {
       Bottleアプリでの動作はプリント機能以外は大体正常です。` },
     ],
     '4': [
-      { type: 'text', content: 'これが最初のストーリーです。' },
-      { type: 'text', content: 'これは画像です：' },
-      { type: 'image', src: '/logo512.png', alt: '画像の説明' },
-      { type: 'text', content: '画像の後にさらにテキストがあります。' },
-      { type: 'link', href: 'https://www.example.com', content: 'example.comへのリンク' },
-      { type: 'ordered-list', items: [
-        { content: 'リスト内の最初のアイテム' },
-        { content: 'リスト内の2番目のアイテム' },
-        { content: 'リスト内の3番目のアイテム' }
-      ]},
-      { type: 'unordered-list', items: [
-        { content: 'リスト内の最初のアイテム' },
-        { content: 'リスト内の2番目のアイテム' },
-        { content: 'リスト内の3番目のアイテム' }
-      ]},
-      { type: 'header', level: 2, content: '見出し2' },
-      { type: 'header', level: 3, content: '見出し3' },
+      { type: 'text', content: `これらはKatagoの自戦1600局を収録したpdf文書とSGFファイル。ルールは古典中国ルール、
+      手数は30手まで、一手は800visitsくらい計算されてる。Katagoの布石探索のランダム性を少し増やしたから必ず最も良い手を選ぶわけではない。` },
+      { type: 'text', content: 'PDFファイルはDragoが作成されたもの。棋譜ライブラリにインポートする際、重複した70局が削除され、1530局が残った。3つのpdfに分かれている。' },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/i4hvzk2wppu0rga/openings_0.pdf', content: 'pdf0' },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/owx22bbx3h1akfq/openings_1.pdf', content: 'pdf1' },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/8ws91uum4s2opx2/openings_2.pdf', content: 'pdf2' },
+      { type: 'link', href: 'https://www.mediafire.com/file_premium/yp7m8uycfm71zyg/openings_sgf.zip', content: 'sgfファイル' },
+      { type: 'text', content: '例：' },
+      { type: 'image', src: '/story4/opening_example.png', alt: '画像の説明', width: '100%' },
     ],
     '5': [
       { type: 'text', content: 'これが最初のストーリーです。' },
@@ -206,7 +198,7 @@ export const stories = {
       '1': '囲碁のルール',
       '2': '勝負の審判',
       '3': 'PC用囲碁アプリ',
-      '4': 'ストーリータイトル4',
+      '4': '囲碁布石1600局',
       '5': 'ストーリータイトル5',
       '6': 'ストーリータイトル6',
     };
