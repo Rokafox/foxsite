@@ -6,11 +6,11 @@ import { translate } from '../../utilities/translate';
 const mockPosts_en = [
     {
         id: 1,
-        title: 'Test Post 1',
-        category: 'Shower Thoughts',
-        date: '2021-10-01',
-        intro: 'This is a brief introduction to Test Post 1...',
-        link: '/stories/6', 
+        title: 'The Secret Garden',
+        category: 'Journal',
+        date: '2023-03-26',
+        intro: 'Welcome to my secret garden!',
+        link: '/stories/5', 
     },
     // Add more here
 ];
@@ -18,11 +18,11 @@ const mockPosts_en = [
 const mockPosts_cn = [
     {
         id: 1,
-        title: '测试帖子 1',
-        category: '淋浴随想',
-        date: '2021-10-01',
-        intro: '这是对测试帖子1的简要介绍...',
-        link: '/stories/6',
+        title: '武陵桃源',
+        category: '游记',
+        date: '2023-03-26',
+        intro: '欢迎来到桃源郷！',
+        link: '/stories/5',
     },
     // Add more here
 ];
@@ -30,11 +30,11 @@ const mockPosts_cn = [
 const mockPosts_jp = [
     {
         id: 1,
-        title: 'テスト投稿 1',
-        category: 'シャワー中のひらめき',
-        date: '2021-10-01',
-        intro: 'これはテスト投稿1の簡単な紹介です...',
-        link: '/stories/6',
+        title: '武陵桃源',
+        category: '紀行',
+        date: '2023-03-26',
+        intro: '桃源郷へようこそ！',
+        link: '/stories/5',
     },
     // Add more here
 ];

@@ -131,27 +131,9 @@ export const stories = {
     { type: 'image', src: '/story4/opening_example.png', alt: '画像の説明', width: '100%' },
   ],
   '5': [
-    { type: 'text', content: '这是第一个故事。' },
-    { type: 'text', content: '这是一张图片：' },
-    { type: 'image', src: '/logo512.png', alt: '图片描述' },
-    { type: 'text', content: '图片后的更多文本。' },
-    { type: 'link', href: 'https://www.example.com', content: '链接到example.com' },
-    {
-      type: 'ordered-list', items: [
-        { content: '列表中的第一项' },
-        { content: '列表中的第二项' },
-        { content: '列表中的第三项' }
-      ]
-    },
-    {
-      type: 'unordered-list', items: [
-        { content: '列表中的第一项' },
-        { content: '列表中的第二项' },
-        { content: '列表中的第三项' }
-      ]
-    },
-    { type: 'header', level: 2, content: '标题 2' },
-    { type: 'header', level: 3, content: '标题 3' }
+    { type: 'text', content: `在这个信息如潮水的时代，我选择了一条与众不同的路——在网络的一隅，静静地建立了静谧而又神秘，遗世独立的桃花源。` },
+    { type: 'text', content: `在这不为搜索引擎所知、不在社交媒体上流传的地方，我尝试探索人类文化的一条独特分支，讲述那些主流文化之外的故事。
+    ` },
   ],
   '6': [
     { type: 'text', content: '这是第一个故事。' },
@@ -202,6 +184,6 @@ export const stories_title = {
   '2': '胜负判定',
   '3': 'PC围棋软件',
   '4': '围棋布局1600局',
-  '5': '故事标题 5',
+  '5': '武陵桃源',
   '6': '故事标题 6',
 };

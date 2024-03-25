@@ -136,23 +136,14 @@ export const stories = {
       { type: 'image', src: '/story4/opening_example.png', alt: '画像の説明', width: '100%' },
     ],
     '5': [
-      { type: 'text', content: 'これが最初のストーリーです。' },
-      { type: 'text', content: 'これは画像です：' },
-      { type: 'image', src: '/logo512.png', alt: '画像の説明' },
-      { type: 'text', content: '画像の後にさらにテキストがあります。' },
-      { type: 'link', href: 'https://www.example.com', content: 'example.comへのリンク' },
-      { type: 'ordered-list', items: [
-        { content: 'リスト内の最初のアイテム' },
-        { content: 'リスト内の2番目のアイテム' },
-        { content: 'リスト内の3番目のアイテム' }
-      ]},
-      { type: 'unordered-list', items: [
-        { content: 'リスト内の最初のアイテム' },
-        { content: 'リスト内の2番目のアイテム' },
-        { content: 'リスト内の3番目のアイテム' }
-      ]},
-      { type: 'header', level: 2, content: '見出し2' },
-      { type: 'header', level: 3, content: '見出し3' },
+      { type: 'text', content: 'ここは、時間が静止され、SNSと広告の喧噪から逃れるところです。' },
+      { type: 'text', content: `検索エンジンやソーシャルメディアのフィードから見つけることはできない、それでも
+      この見つけた者にしか明かされない私だけの桃源郷に辿り着いた。これは偶然ではなく、運命に導かれた出会いなのでしょう。` },
+      { type: 'text', content: `しかし、なぜこのサイトがこんなデジタル時代の隠者のように存在し、
+      世間からの隔絶を選んだのか、あなたは疑問に思うかもしれない。理由はここは単なる情報掲載サイトではなく、
+      人類文化のユニークな分岐でもあるのです。この乖離は意図的なものであり、主流がしばしば描く均質な風景に対する創造的な反抗である。
+      ` },
+      { type: 'text', content: '私には、異なる夢を見っている。' },
     ],
     '6': [
       { type: 'text', content: 'これが最初のストーリーです。' },
@@ -199,6 +190,6 @@ export const stories = {
       '2': '勝負の審判',
       '3': 'PC用囲碁アプリ',
       '4': '囲碁布石1600局',
-      '5': 'ストーリータイトル5',
+      '5': '武陵桃源',
       '6': 'ストーリータイトル6',
     };

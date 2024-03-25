@@ -148,23 +148,19 @@ export const stories = {
       { type: 'image', src: '/story4/opening_example.png', alt: '画像の説明', width: '100%' },
     ],
     '5': [
-        { type: 'text', content: 'This is the fifth story.' },
-        { type: 'text', content: 'This is a image:'},
-        { type: 'image', src: '/logo512.png', alt: 'Image description' },
-        { type: 'text', content: 'More text after the image.' },
-        { type: 'link', href: 'https://www.example.com', content: 'Link to example.com'},
-        { type: 'ordered-list', items: [
-          { content: 'First item in the list' },
-          { content: 'Second item in the list' },
-          { content: 'Third item in the list' }
-        ]},
-        { type: 'unordered-list', items: [
-          { content: 'First item in the list' },
-          { content: 'Second item in the list' },
-          { content: 'Third item in the list' }
-        ]},
-        { type: 'header', level: 2, content: 'Header 2' },
-        { type: 'header', level: 3, content: 'Header 3' },
+      { type: 'text', content: `In the vast, interconnected web of the digital age, 
+      where every query summons a deluge of information and every click can lead to a new discovery, 
+      there lies a quiet, unassuming corner, untouched by the algorithms' embrace. 
+      This corner, my dear readers, is my Secret Garden.` },
+      { type: 'text', content: `You won't find it through search engines or social media feeds.
+      It's off the grid, a digital hermitage, if you will, existing in quiet defiance of the internet's bustling metropolis.` },
+      { type: 'text', content: `But why, you might ask, have I chosen such seclusion for my works?
+      Because the Secret Garden is not just a website; it's a repository of ideas, thoughts, and stories that diverge from mainstream paths.
+      This divergence is intentional, it is a creative rebellion against the homogeneous landscapes often painted by popular media.
+      ` },
+      { type: 'text', content: `Welcome to the Secret Garden—a haven for the unique fork of human culture. 
+      To you, the explorer of digital realms, the seeker of hidden treasures, 
+      I extend an invitation. Enjoy a peaceful space for those who dare to dream differently.` },
     ],
     '6': [
         { type: 'text', content: 'This is the sixth story.' },
@@ -211,6 +207,6 @@ export const stories = {
       '2': 'Endgame Judgment',
       '3': 'Go game PC software',
       '4': '1600 Go Game Openings',
-      '5': 'Story Title 5',
+      '5': 'The Secret Garden',
       '6': 'Story Title 6',
     };
